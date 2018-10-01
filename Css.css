@@ -1,0 +1,878 @@
+body{
+	background-color: whitesmoke;
+}
+#header a {
+	font-size:14px;
+	font-family:tahoma;
+	font-weight:400;
+	float:right;
+} 
+#header span {
+	float:right;
+	margin:0 5px;
+}
+
+#basket {
+	float:left;
+}
+
+
+
+#header a img{
+	vertical-align:middle;
+}
+
+#productaddremovefrombasket{
+
+	display: none;
+	opacity: 0;
+	width: 260px;
+	height: 150px;
+	background: whitesmoke;
+	position: fixed;
+	top: 25%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 12;
+	border-radius: 5px;
+	border: 1px solid gray;
+	box-shadow: 1px 1px 4px gray;
+
+
+}
+
+#productaddremovefrombasket h3{
+	font-family: 'B Nazanin';
+	font-size: 16px;
+	font-weight: 600;
+	/*border-bottom: 2px solid black;*/
+	width: 250px;
+	text-align: right;
+	float: right;
+	background: white;
+	margin-right: 5px;
+	padding-top: 3px;
+}
+
+#productaddremovefrombasket img{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 3px;
+	left: 3px;
+	cursor: pointer;
+
+
+}
+#productaddremovefrombasket #paymoney{
+	color: black;
+	font-family: 'B Nazanin';
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+	text-decoration: none;
+	background: white;
+	width: 100px;
+	height: 30px;
+	border: 0;
+	line-height: 28px;
+	box-shadow: 1px 1px 4px black;
+	position:absolute;
+	top:113px;
+	left:8px;
+
+
+}
+#productaddremovefrombasket #edamekharid{
+	color: black;
+	font-family: 'B Nazanin';
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+	text-decoration: none;
+	background: white;
+	width: 100px;
+	height: 30px;
+	border: 0;
+	line-height: 28px;
+	box-shadow: 1px 1px 4px black;
+	position:absolute;
+	top:113px;
+	right:8px;
+	cursor: pointer;
+
+}
+
+#productremovefrombasket{
+
+	display: none;
+	opacity: 0;
+	width: 260px;
+	height: 60px;
+	background: whitesmoke;
+	position: fixed;
+	top: 25%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 12;
+	border-radius: 5px;
+	border: 1px solid gray;
+	box-shadow: 1px 1px 4px gray;
+
+
+}
+
+#productremovefrombasket h3{
+	font-family: 'B Nazanin';
+	font-size: 16px;
+	font-weight: 600;
+	/*border-bottom: 2px solid black;*/
+	width: 250px;
+	text-align: right;
+	float: right;
+	background: white;
+	margin-right: 5px;
+	padding-top: 3px;
+}
+#productremovefrombasket img{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 3px;
+	left: 3px;
+	cursor: pointer;
+
+
+}
+
+#popupbasket{
+	position: absolute;
+	width: 384px;
+	max-height: 200px;
+	background: whitesmoke;
+	z-index: 12;
+	top: 50px;
+	left: 125px;
+	display: none;
+	opacity: 0;
+
+
+}
+
+#buybasket{
+	overflow-y: scroll;
+    width: 384px;
+	max-height: 200px;
+    background: whitesmoke;
+    top: 83px;
+    left: 9px;
+
+
+}
+#buybasket>ul{
+    padding: 0;
+    margin: 0;
+    margin-right: 4px;
+    margin-bottom: 10px;
+    width:100%;
+    height: 70px;
+    background:white;
+    list-style: none;
+    /*border-bottom: 1px solid black;*/
+    box-shadow: 1px 1px 4px gray;
+
+}
+
+#buybasket li{
+    float: right;
+}
+
+
+#menubar ul {
+	width:100%;
+	height:100%;
+	direction:rtl;
+	margin:0 5px;
+	line-height:30px;
+	font-family:tahoma;
+	font-size:14px;
+	
+}
+#menubar > ul> li, #menubar >ul> li> ul> li {
+	list-style:none;
+	float:right;
+	margin-left:15px;
+	margin-right:5px;
+	height: 100%;
+	cursor:pointer;
+	color:black;
+}
+
+#menubar>ul>li>img {
+	vertical-align:middle;
+	margin-left:3px;
+}
+
+#menubar> ul> li>ul {
+	width:1100px;
+	height:37px;
+	padding:0;
+	margin:0;
+	margin:0 auto;
+	position:absolute;
+	right:0;
+	top:37;
+	z-index:2;
+	color:red;
+	display:none;
+	
+}
+
+#slidemenu {
+	position:absolute;
+	width:100%;
+	height:40px;
+	margin:0 auto;
+	background:gray;
+	display:none;
+}
+
+#registering{
+	width: 1100px;
+	height: 37px;
+	background-color: gray;
+	margin: 0 auto;
+	box-shadow: 1px 1px 2px black;
+	border-radius:0px 0px 10px 10px;
+
+}
+#registering>div{
+	width:200px ;
+	height: 30px;
+	background: whitesmoke;
+	float: right;
+	margin-right: 10px;
+	text-align: center;
+	line-height: 29px;
+
+}
+#registering>div>a{
+	font-family: "B Nazanin";
+	font-weight:600;
+	font-size: 14px;
+	text-decoration: none;
+	color: black;
+}
+#registering>div>input{
+	line-height: 25px;
+}
+
+#topcontent{
+	float: right;
+	background: red;
+	width: 700px;
+	height: 340px;
+	margin:0 auto;
+	/*margin-top:20px;*/
+}
+#slidshow{
+	width: 700px;
+	height: 340px;
+	/*border: 2px solid;*/
+	box-shadow: 1px 1px 4px dimgray;
+	float: right;
+	overflow: hidden;
+	border-radius: 5px;
+
+}
+
+#newproduct{
+	width: 100%;
+	border-radius: 5px;
+	margin: 0 auto;
+	margin-top: 50px;
+
+	position: relative;
+	float: right;
+	background: white;
+	box-shadow: 1px 1px 4px dimgray;
+
+}
+
+#newproduct>h1{
+	font-family: "B Nazanin";
+	font-size: 18px;
+	font-weight: 600;
+	width: 110px;
+	text-align: center;
+	float: right !important;
+	margin-top: -32px;
+	right: -1px;
+	border-bottom: 3px solid red;
+	position: absolute;
+
+}
+
+#newproduct>ul{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	float: right;
+	box-shadow: 1px 1px 4px dimgray;
+
+
+}
+
+#newproduct img{
+	float: right;
+	width: 100%;
+	height: 160px;
+	margin-right: 15px;
+	float: right;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+#newproduct li{
+	width: 228px ;
+	height: 200px;
+	list-style: none;
+	float:right;
+	margin-top:18px;
+	margin-bottom:18px;
+	margin-right: 30px;
+	font-family: "B Nazanin";
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+    cursor: pointer;
+
+}
+
+#newproduct a{
+    display: block;
+    font-family: "B Nazanin";
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    direction: rtl;
+}
+
+#mostsel{
+	width: 100%;
+	border-radius: 5px;
+	margin: 0 auto;
+	margin-top: 50px;
+	position: relative;
+	float: right;
+	background: white;
+	box-shadow: 1px 1px 4px dimgray;
+}
+
+#mostsel>h1{
+    font-family: "B Nazanin";
+    font-size: 18px;
+    font-weight: 600;
+    width: 160px;
+    text-align: center;
+    float: right;
+    margin-top: -32px;
+    right: -1px;
+    border-bottom: 3px solid red;
+    position: absolute;
+
+}
+
+#mostsel>ul{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	padding-bottom: 15px;
+	float: right;
+	box-shadow: 1px 1px 4px dimgray;
+
+
+}
+
+#mostsel img{
+    float: right;
+    width: 100%;
+    height: 160px;
+    margin:0 auto;
+    float: right;
+    overflow: hidden;
+}
+
+#mostsel li{
+    /*border: 1px solid black;*/
+    width: 228px ;
+    height: 230px;
+    list-style: none;
+    float:right;
+    margin-top:18px;
+    margin-right: 30px;
+    font-family: "B Nazanin";
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+
+}
+#mostsel a{
+    display: block;
+    font-family: "B Nazanin";
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    direction: rtl;
+}
+#price{
+    font-family: "B Nazanin";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: center;
+    width: 160px;
+    height: 100%;
+    background: whitesmoke;
+    float: left;
+}
+#statuscase{
+    text-align: center;
+    width: 68px;
+    height: 100%;
+    float: right;
+    background: #36CDDF;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+}
+
+#detectProduct{
+    width: 236px ;
+    height: 230px;
+    background: black;
+    position: absolute;
+    top: 0;
+    opacity:0;
+}
+
+#detectProduct a{
+    font-family: "B Nazanin";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    color: white;
+    border: 1px solid whitesmoke;
+    display: block;
+}
+
+.borderClass{
+	margin: 0;
+	padding: 0;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 4px gray;
+}
+
+.x1{
+	transition: all 1s ease-in-out;
+}
+
+.x1:hover{
+	background: darkturquoise;
+	border-radius: 5px;
+	color: black !important;
+
+}
+
+.x2{
+	transition: all 1s ease-in-out;
+}
+
+.x2:hover{
+	background: yellow;
+	border-radius: 5px;
+	color: black !important;
+
+}
+
+.x3{
+	transition: all 1s ease-in-out;
+}
+
+.x3:hover{
+	background: greenyellow;
+	border-radius: 5px;
+	color: black !important;
+}
+
+#registercontainer{
+    width: 1100px;
+    /*background: yellow;*/
+    margin: 0 auto;
+    margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+#registercontainer span{
+    float: right;
+    direction: rtl;
+    line-height: 50px;
+}
+
+#registersection{
+    width: 100%;
+    height: 50px;
+    background: white;
+    margin-top: 5px;
+    /*box-shadow: 1px 1px 4px gray;*/
+}
+
+#registersectionspan{
+    width: 150px;
+    float: right;
+    direction: rtl;
+    line-height: 50px;
+    margin-right: 7px;
+    font-family: "B Nazanin";
+    font-weight: 400;
+    font-size: 18px;
+
+}
+
+#registersection input[type=text]{
+
+     width: 250px;
+     height: 30px;
+     float: right;
+     margin-top: 11px;
+     font-family: "B Nazanin";
+     font-weight: 400;
+     font-size: 16px;
+     direction: rtl;
+     color: black;
+     border-radius: 3px;
+     border: none;
+     box-shadow: 1px 1px 4px gray;
+	 padding:5px;
+
+}
+
+#registersection input[type=password]{
+
+    width: 250px;
+    height: 30px;
+    float: right;
+    margin-top: 11px;
+    font-family: "B Nazanin";
+    font-weight: 400;
+    font-size: 16px;
+    direction: rtl;
+    color: black;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 1px 1px 4px gray;
+	padding:5px;
+
+
+
+
+
+}
+
+#registersection select{
+	width: 250px;
+	height: 30px;
+	float: right;
+	margin-top: 11px;
+	font-family: "B Nazanin";
+	font-weight: 400;
+	font-size: 16px;
+	direction: rtl;
+	color: black;
+	border-radius: 3px;
+	border: none;
+	box-shadow: 1px 1px 4px gray;
+
+}
+
+
+#registersection textarea{
+	width: 400px;
+	max-width: 400px;
+	min-width: 400px;
+	max-height: 200px;
+	min-height: 200px;
+	height: 200px;
+	float: right;
+	margin-top: 11px;
+	font-family: "B Nazanin";
+	font-weight: 400;
+	font-size: 16px;
+	direction: rtl;
+	color: black;
+	border-radius: 3px;
+	border: none;
+	box-shadow: 1px 1px 4px gray;
+	padding: 5px;
+}
+
+
+#registersection input[type=checkbox]{
+
+	float: right;
+	margin-top: 18px;
+	margin-right: 5px;
+	margin-left: 5px;
+
+}
+
+#registersection input[type=submit]{
+
+	float: left;
+	margin-top: 13px;
+	margin-right: 5px;
+	margin-left: 65px;
+	background: whitesmoke;
+	border: none;
+	box-shadow: 1px 1px 3px gray;
+	width: 100px;
+	height: 26px;
+	border-radius: 3px;
+	text-align: center;
+	padding-bottom: 3px;
+
+
+}
+
+#registersection #cancel{
+
+	float: left;
+	margin-top: 13px;
+	margin-right: 5px;
+	margin-left: 10px;
+	background: whitesmoke;
+	border: none;
+	box-shadow: 1px 1px 3px gray;
+	width: 100px;
+	height: 26px;
+	border-radius: 3px;
+	text-align: center;
+	padding-bottom: 3px;
+
+
+
+}
+
+#login{
+	width: 100%;
+	float: right;
+	margin-top: 30px;
+
+
+
+}
+
+#registersection th{
+	font-family: "B Nazanin";
+	font-weight: 400;
+	font-size: 20px;
+	text-align: right;
+	border-collapse: collapse;
+	border: none;
+	border-bottom: 1px solid gray;
+	padding: 10px;
+	background: whitesmoke;
+}
+
+#registersection td{
+	font-family: "B Nazanin";
+	font-size: 18px;
+	text-align: right;
+	border-collapse: collapse;
+	border: none;
+	border-bottom: 1px solid gray;
+	padding: 10px;
+	background: whitesmoke;
+
+}
+#registersection td a{
+    text-decoration: none;
+    font-family: "B Nazanin";
+    font-size: 18px;
+    color: black;
+}
+
+#registersection td a img{
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px ;
+}
+
+#showusermessag{
+    display: none;
+    position: fixed;
+     width: 400px;
+     height: 300px;
+     background: white;
+     top: 25%px;
+     left: 337px;
+     right: 0;
+     border-radius: 5px;
+     overflow: hidden;
+     padding: 30px;
+     box-shadow: 1px 1px 5px gray;
+
+
+}
+
+#showusermessag span{
+    width: 380px;
+    height: 280px;
+    background: white;
+    padding: 10px;
+    text-align: justify;
+    overflow-y: scroll;
+    border: 2px solid gray;
+
+}
+
+#showusermessag img{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0px;
+    left:0px;
+
+
+}
+
+#pager a{
+	text-decoration: none;
+	display: block;
+	width: 20px;
+	height: 25px;
+	background: whitesmoke;
+	text-align:center;
+	float: left;
+	margin: 0 3px;
+	border: 1px solid black;
+	line-height: 25px;
+}
+
+
+#rightpanelinadvancsearch{
+	float: right;
+	width: 250px;
+	height: 400px;
+	background: white;
+	box-shadow: 1px 1px 5px black;
+	margin-top: 50px;
+}
+
+#topadvancsearch{
+	position: relative;
+	float: left;
+	width: 1060px;
+	height: 100px;
+	background: whitesmoke;
+	box-shadow: 1px 1px 5px black;
+	margin-top: 50px;
+
+}
+
+#numberofshow a ,#numberofproductshow a{
+	float: right;
+	width: 27px;
+	height: 27px;
+	border-radius: 100%;
+	background: white;
+	margin-right:10px;
+	margin-top: 2px;
+	text-align: center;
+	line-height: 30px;
+	text-decoration: none;
+	font-family: 'B Nazanin';
+	font-size: 18px;
+	font-weight: 400;
+	color: black;
+	border: 1px solid gray;
+
+	/*position: absolute;*/
+}
+
+#numberofshow a:hover, #numberofproductshow a:hover{
+	background: red;
+	cursor: pointer;
+}
+
+.pager{
+	transition: all linear 0.4s;
+}
+
+
+#category{
+	float: right;
+	margin-top: 50px;
+	width: 100%;
+	background: white;
+	padding: 5px 0;
+	box-shadow: 1px 1px 5px gray;
+	position: relative;
+
+}
+#category span {
+	/*float: right;*/
+	width: 98%;
+	position: absolute;
+	font-family: "B Nazanin";
+	font-weight: 400;
+	font-size: 18px;
+	color: black;
+	text-align: center;
+	margin-right: 5px;
+	/*border-bottom: 2px solid red;*/
+	top: -30px;
+	right: -4px;
+}
+
+
+#category ul{
+	border:1px solid black ;
+	height: 20px;
+	margin: 5px;
+	padding: 5px;
+	background: whitesmoke;
+
+
+	/*text-align: right;*/
+
+
+}
+#category ul li{
+	float: right;
+	direction: rtl;
+	list-style: none;
+
+
+}
+
+#category ul li a{
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+	font-family: "B Nazanin";
+	font-weight: 400;
+	text-align: right;
+	line-height: 10px;
+}
